@@ -19,7 +19,7 @@ class Linkline extends StatelessWidget {
               )),
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 40),
+          padding: const EdgeInsets.only(left: 20),
           child: TextButton(
               onPressed: () {
                 context.go('/signup');

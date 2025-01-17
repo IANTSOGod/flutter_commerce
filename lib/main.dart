@@ -34,18 +34,10 @@ class Main extends StatelessWidget {
           builder: (context, state) => const Routingerrorpage()),
       GoRoute(path: '/signup', builder: (context, state) => const Signup()),
       GoRoute(path: '/home', builder: (context, state) => const Home())
-    ], initialLocation: '/');
+    ], initialLocation: '/',debugLogDiagnostics: true);
     return ShadApp.router(
       title: "Commerce",
-      themeMode: ThemeMode.light,
-      theme: ShadThemeData(
-        brightness: Brightness.light,
-        colorScheme: const ShadZincColorScheme.light(),
-      ),
-      darkTheme: ShadThemeData(
-        brightness: Brightness.dark,
-        colorScheme: const ShadZincColorScheme.dark(),
-      ),
+
       routerConfig: _router,
     );
   }
